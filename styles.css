@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(51, 60, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.hero {
+    color: rgb(216, 223, 244);
+    text-align: center; /* Optional to center text */
+    font-family: "Palatino", "Carbon-Regular", "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", IBMPlexSans, Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, Icon, sans-serif;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(31, 38, 53);
+    justify-content: space-around;
+    padding: 24px;
+    width: 100%;
+    position: fixed; /* Keep header at the top */
+    top: 0; /* Ensure it's at the top */
+}
+
+
+.header a {
+    font-family: "Palatino", "Carbon-Regular", "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", IBMPlexSans, Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, Icon, sans-serif;
+    color: rgb(216, 223, 244);
+    text-decoration: none;
+}
+
+.nav-name {
+    margin-left: 260px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 224.41px;
+    text-align: right;
+}
+
+.header-right {
+    margin-right: 300px;
+    font-size: 16px;
+}
+
+.item {
+    padding: 0px 10px;
+}
+
+a i {
+    color: rgb(216, 223, 244);
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.header-right a {
+    position: relative;
+    display: inline-block; /* Make sure the link is inline-block */
+}
+
+.header-right a::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Center the line */
+    bottom: 0;
+    height: 2px;
+    width: 80%; /* Set this to less than 100% for a shorter line */
+    background: rgb(216, 223, 244);
+    transform: translateX(-50%) scaleX(0); /* Center the line and scale it down */
+    transition: transform 0.3s;
+}
+
+.header-right a:hover::after {
+    transform: translateX(-50%) scaleX(1); /* Center the line and scale it to full width */
+}
+
+p {
+    font-size: 18px;
+}
+
+.socials a {
+    margin-right: 6px; /* Adjust this value for desired spacing */
+}
+
+/* Optional: Remove margin from the last icon */
+.socials a:last-child {
+    margin-right: 0;
+}
