@@ -84,6 +84,7 @@ p {
 }
 
 .socials a {
+    text-decoration: none; /* Removes the underline */
     margin-right: 6px; /* Adjust this value for desired spacing */
 }
 
