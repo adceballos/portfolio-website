@@ -14,6 +14,7 @@ h1 {
 
 .hero {
     color: rgb(216, 223, 244);
+    width: 100%;
     text-align: center; /* Optional to center text */
     font-family: "Palatino", "Carbon-Regular", "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", IBMPlexSans, Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, Icon, sans-serif;
 }
@@ -36,10 +37,9 @@ h1 {
 }
 
 .nav-name {
-    margin-left: 260px;
+    margin-left: 340px;
     font-weight: bold;
     font-size: 20px;
-    width: 224.41px;
     text-align: right;
 }
 
@@ -88,7 +88,6 @@ p {
     margin-right: 6px; /* Adjust this value for desired spacing */
 }
 
-/* Optional: Remove margin from the last icon */
 .socials a:last-child {
     margin-right: 0;
 }
