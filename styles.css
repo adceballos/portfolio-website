@@ -180,7 +180,7 @@ h1 {
     font-family: "Palatino", "Carbon-Regular", "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", IBMPlexSans, Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, Icon, sans-serif;
 }
 
-p {
+p, li {
     font-size: 18px;
     color: var(--text-color);
 }
@@ -200,17 +200,19 @@ a i {
     margin-right: 0;
 }
 
-.about-me {
+.content-section {
     font-family: "Palatino", "Carbon-Regular", "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", IBMPlexSans, Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, Icon, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 .about-me-item {
     margin: 0;
-    margin-bottom: 13px;
-    margin-top: 13px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    line-height: 1.2;
 }
 
 .standout-color {
@@ -237,16 +239,34 @@ hr {
 }
 
 @media (max-width: 1400px) {
-    .about-me {
+    .content-section {
         padding: 0px 24px;
     }
 
-    .about-h1 {
+    .secondary-h1 {
         margin-bottom: 15px;
+        font-size: 36px;
     }
 }
 
-.musashi {
-    position: absolute;
-    bottom: 20px;
+ul {
+    margin: 0px;
+}
+
+.project-item {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.25;
+}
+
+.project-h1 {
+    margin-bottom: 20px;
+}
+
+.project-caption {
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    padding: 5px 0px;
 }
