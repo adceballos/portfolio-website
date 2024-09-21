@@ -40,7 +40,7 @@ body {
 }
 
 .nav-name {
-    margin-left: 340px;
+    margin-left: 360px;
     font-weight: bold;
     font-size: 20px;
     text-align: right;
@@ -107,7 +107,7 @@ body {
         outline: none;
         background: none;
         color: var(--text-color);
-        padding: 0px 10px;
+        padding: 0px 5px;
     }
 
     .header-right.show {
@@ -158,7 +158,7 @@ body {
     .buttons {
         position: absolute;
         right: 0;
-        margin-right: 36px;
+        margin-right: 40px;
     }
 }
 
