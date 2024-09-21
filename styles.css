@@ -2,7 +2,9 @@
     --background-color: rgb(51, 60, 77);
     --header-background-color: rgb(31, 38, 53);
     --title-text-color: rgb(175, 199, 251);
-    --text-color: rgb(216, 223, 244);
+    --text-color: rgb(206, 213, 234, 0.80);
+    --standout-text-color: rgb(255, 255, 255);
+    --placeholder-text-color: rgb(216, 223, 244);
 }
 
 .light-mode {
@@ -10,6 +12,7 @@
     --header-background-color: rgb(219, 226, 247);
     --title-text-color: rgb(65, 95, 148);
     --text-color: rgb(96, 99, 104);
+    --standout-text-color: rgb(0, 0, 0);
 }
 
 body {
@@ -168,10 +171,10 @@ body {
 
 h1 {
     font-size: 42px;
+    color: var(--title-text-color);
 }
 
 .hero {
-    color: var(--title-text-color);
     width: 100%;
     text-align: center;
     font-family: "Palatino", "Carbon-Regular", "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", IBMPlexSans, Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, Icon, sans-serif;
@@ -195,4 +198,50 @@ a i {
 
 .socials a:last-child {
     margin-right: 0;
+}
+
+.about-me {
+    font-family: "Palatino", "Carbon-Regular", "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", IBMPlexSans, Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, Icon, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me-item {
+    margin: 0;
+    margin-bottom: 13px;
+    margin-top: 13px;
+}
+
+.standout-color {
+    color: var(--standout-text-color);
+}
+
+.emphasis {
+    color: var(--standout-text-color);
+    font-weight: bold;
+}
+
+.caption {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--text-color);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (max-width: 1400px) {
+    .about-me {
+        padding: 0px 24px;
+    }
+
+    .about-h1 {
+        margin-bottom: 15px;
+    }
 }
