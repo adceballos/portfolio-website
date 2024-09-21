@@ -13,9 +13,9 @@ h1 {
 }
 
 .hero {
-    color: rgb(216, 223, 244);
+    color: rgb(175, 199, 251);
     width: 100%;
-    text-align: center; /* Optional to center text */
+    text-align: center;
     font-family: "Palatino", "Carbon-Regular", "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia", IBMPlexSans, Inter, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, Icon, sans-serif;
 }
 
@@ -25,8 +25,8 @@ h1 {
     justify-content: space-around;
     padding: 24px;
     width: 100%;
-    position: fixed; /* Keep header at the top */
-    top: 0; /* Ensure it's at the top */
+    position: fixed;
+    top: 0; /* Ensure header is at the top */
 }
 
 
@@ -41,11 +41,80 @@ h1 {
     font-weight: bold;
     font-size: 20px;
     text-align: right;
+    white-space: nowrap;
 }
 
 .header-right {
+    display: flex;
     margin-right: 300px;
     font-size: 16px;
+}
+
+.hamburger {
+    display: none; /* Hide hamburger menu by default */
+}
+
+@media (max-width: 768px) {
+    .header-right {
+        display: none;
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger menu on smaller screens */
+        background: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none;
+        background: none;
+        color: rgb(216, 223, 244);
+        margin-right: 20px;
+    }
+
+    .header-right.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 16%;
+        background-color: #1f2635;
+        top: 64px;
+        right: -278px;
+        text-align: center;
+    }    
+
+    .header-right a {
+        display: block;
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .header-right a:last-child {
+        padding-bottom: 15px;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .nav-name {
+        margin-left: 20px;
+    }
+    
+    .header-right a::after {
+        content: '';
+        position: absolute;
+        left: 50%; /* Center the line */
+        top: 30px;
+        height: 2px;
+        width: 66%;
+        background: rgb(216, 223, 244);
+        transform: translateX(-50%) scaleX(0); /* Center the line and scale it down */
+        transition: transform 0.3s;
+    }
+    
+    .header-right a:hover::after {
+        transform: translateX(-50%) scaleX(1); /* Center the line and scale it to full width */
+    }
 }
 
 .item {
@@ -60,7 +129,7 @@ a i {
 
 .header-right a {
     position: relative;
-    display: inline-block; /* Make sure the link is inline-block */
+    display: inline-block;
 }
 
 .header-right a::after {
@@ -69,8 +138,8 @@ a i {
     left: 50%; /* Center the line */
     bottom: 0;
     height: 2px;
-    width: 80%; /* Set this to less than 100% for a shorter line */
-    background: rgb(216, 223, 244);
+    width: 80%;
+    background:rgb(216, 223, 244);
     transform: translateX(-50%) scaleX(0); /* Center the line and scale it down */
     transition: transform 0.3s;
 }
@@ -81,11 +150,12 @@ a i {
 
 p {
     font-size: 18px;
+    color: rgb(216, 223, 244);
 }
 
 .socials a {
     text-decoration: none; /* Removes the underline */
-    margin-right: 6px; /* Adjust this value for desired spacing */
+    margin-right: 6px;
 }
 
 .socials a:last-child {
