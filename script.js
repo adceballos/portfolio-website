@@ -7,7 +7,18 @@ menuButton.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
 
+// Check for saved user preference
+if (localStorage.getItem('theme') === 'light') {
+    body.classList.add('light-mode');
+}
+
 toggleButton.addEventListener('click', () => {
     body.classList.toggle('light-mode');
-})
-
+    
+    // Save the theme preference
+    if (body.classList.contains('light-mode')) {
+        localStorage.setItem('theme', 'light');
+    } else {
+        localStorage.removeItem('theme');
+    }
+});

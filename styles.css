@@ -245,3 +245,8 @@ hr {
         margin-bottom: 15px;
     }
 }
+
+.musashi {
+    position: absolute;
+    bottom: 20px;
+}
