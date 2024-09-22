@@ -190,6 +190,10 @@ body {
     .detailed-resume-body {
         overflow: visible;
     }
+
+    .about-body .content-section {
+        margin-top: 30px;
+    }
 }
 
 .item {
