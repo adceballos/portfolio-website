@@ -22,3 +22,16 @@ toggleButton.addEventListener('click', () => {
         localStorage.removeItem('theme');
     }
 });
+
+function adjustIframeSize() {
+    const iframe = document.getElementById('pdf-iframe');
+    if (window.innerWidth < 768) {
+        iframe.style.width = '80%';
+        iframe.style.height = '550px';
+    }
+}
+// Initial call
+adjustIframeSize();
+
+// Adjust on resize
+window.addEventListener('resize', adjustIframeSize);

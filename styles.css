@@ -25,6 +25,17 @@ body {
     margin: 0; /* Remove default margin */
 }
 
+.detailed-resume-body {
+    overflow: hidden; /* Prevents all scrolling */
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
 .header {
     display: flex;
     background-color: var(--header-background-color);
@@ -163,6 +174,22 @@ body {
         right: 0;
         margin-right: 40px;
     }
+
+    .technical-skills {
+        display: none;
+    }
+
+    .technical-item {
+        display: none;
+    }
+
+    .resume-body .content-section {
+        margin-top: 60px;
+    }
+
+    .technical-h2 {
+        display: none;
+    }
 }
 
 .item {
@@ -266,6 +293,16 @@ ul {
     margin-bottom: 10px;
 }
 
+.technical-item {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.technical-item:first-child {
+margin-top: 10px;
+}
+
 .secondary-h1 {
     margin-bottom: 20px;
 }
@@ -292,4 +329,12 @@ font-size: 20px;
     display: flex;
     align-items: center;
     margin-bottom: -10px;
+}
+
+.resume-pdf {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 110%;
+    margin-top: 50px;
 }
