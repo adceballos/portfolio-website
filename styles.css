@@ -32,6 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
     margin: 0; /* Remove default margin */
 }
 
@@ -107,7 +108,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .header-right {
+    .header-right, .technical-skills, .technical-item, .technical-h2 {
         display: none;
     }
 
@@ -174,24 +175,20 @@ body {
         margin-right: 40px;
     }
 
-    .technical-skills {
-        display: none;
-    }
-
-    .technical-item {
-        display: none;
-    }
-
     .content-section {
         margin-top: -50px;
     }
 
-    .technical-h2 {
-        display: none;
-    }
-
     .hero {
         margin-top: -30px;
+    }
+
+    .resume-pdf {
+        margin-bottom: 30px;
+    }
+
+    .detailed-resume-body {
+        overflow: visible;
     }
 }
 

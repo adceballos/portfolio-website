@@ -26,8 +26,8 @@ toggleButton.addEventListener('click', () => {
 function adjustIframeSize() {
     const iframe = document.getElementById('pdf-iframe');
     if (window.innerWidth < 768) {
-        iframe.style.width = '60%';
-        iframe.style.height = '500px';
+        iframe.style.width = '100%';
+        iframe.style.height = '600px';
     }
 }
 // Initial call
