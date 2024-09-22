@@ -32,7 +32,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
 }
 
@@ -183,12 +182,16 @@ body {
         display: none;
     }
 
-    .resume-body .content-section {
-        margin-top: 60px;
+    .content-section {
+        margin-top: -50px;
     }
 
     .technical-h2 {
         display: none;
+    }
+
+    .hero {
+        margin-top: -30px;
     }
 }
 
